@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Contact Form</title>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Contact Us</h1>
+		</header>
+		<section id="main-form-section">
+			<form>
+				<h1 class="heading">How Can we Help You ?</h1>
+				<section>
+					<section id="user-info">
+						<label for="username">Your Name</label>
+						<input type="text" name="username" id="username" placeholder="First & Last Name" required a/>
+
+						<label for="user-email">Your Email Address</label>
+						<input type="email" name="user-email" id="user-email" placeholder="emailaddress@xyz.com" required />
+
+						<label for="phone-number">Your Phone Number</label>
+						<input type="number" name="phone-number" id="phone-number" placeholder="+910000000000" required />
+					</section>
+
+					<section id="feedback">
+						<label for="feedback-message">Your Feedback Message</label>
+						<textarea name="feedback-message" id="feedback-message" rows="6" placeholder="Please explain in few words how can we help you"></textarea>
+
+						<label for="find-us">How did you find us ?</label>
+						<select name="find-us-via" id="find-us">
+							<option value="web">Web Search</option>
+							<option value="friend">From a Friend</option>
+							<option value="linkedin">From Linkedin</option>
+						</select>
+					</section>
+					<h1 class="heading">How should we reply ?</h1>
+					<section id="reply-with">
+						<div class="reply-method">
+							<input type="radio" name="reply-method" id="call" />
+							<label for="call">Call me</label>
+						</div>
+						<div class="reply-method">
+							<input type="radio" name="reply-method" id="email" />
+							<label for="email">Send an email</label>
+						</div>
+						<div class="reply-method">
+							<input type="radio" name="reply-method" id="none" />
+							<label for="none">Dont reply</label>
+						</div>
+					</section>
+				</section>
+
+				<section id="terms" class="reply-method">
+					<input type="checkbox" name="terms" id="terms" required checked/>
+					<label for="terms">Accept Terms</label>
+				</section>
+				<section id="btn">
+					<button id="clear" type="reset">Clear</button>
+					<button id="submit" type="submit">Submit</button>
+				</section>
+			</form>
+		</section>
+	</body>
+</html>
