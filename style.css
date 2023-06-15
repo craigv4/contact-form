@@ -1,0 +1,112 @@
+html {
+	font-family: "Lora", serif;
+	box-sizing: border-box;
+	font-weight: 700;
+}
+
+body {
+	background-color: rgb(216, 224, 229);
+	margin: 0;
+	padding: 0;
+}
+
+header h1 {
+	font-size: 3rem;
+	font-style: italic;
+	margin: 1.4rem auto;
+	text-align: center;
+}
+
+form {
+	box-shadow: rgba(0, 0, 0, 0.24) 6px 12px 12px;
+	width: 36rem;
+	background-color: rgb(240, 242, 255);
+	margin: 0 auto;
+	border-radius: 0.5rem;
+	padding: 1.6rem;
+}
+
+.heading {
+	font-size: 1.6rem;
+	font-style: italic;
+	margin: 1rem 0;
+}
+
+label,
+input,
+textarea {
+	display: block;
+	width: 100%;
+	font-style: italic;
+	margin: 1rem auto 0.1rem auto;
+	box-sizing: border-box;
+	font-family: inherit;
+}
+
+#user-info input {
+	height: 1.8rem;
+	margin: 0.2rem 0;
+	border: 1px solid #bbb;
+	padding-left: 1ch;
+	border-radius: 0.2rem;
+}
+
+#feedback textarea {
+	border: 1px solid #bbb;
+	resize: none;
+	border-radius: 0.2rem;
+	padding-left: 1ch;
+	padding-top: 1ch;
+	margin: 0.2rem 0;
+}
+
+#feedback label {
+	margin: 1rem auto 0.1rem auto;
+}
+
+#feedback select {
+	width: 100%;
+	height: 1.8rem;
+	border: 1px solid #bbb;
+	border-radius: 0.2rem;
+	margin-top: 0.2rem;
+}
+
+.reply-method {
+	display: flex;
+}
+
+.reply-method input,
+.reply-method label {
+	width: auto;
+	margin: 0.2rem 0.4rem;
+}
+
+#terms label,
+#terms input {
+	margin: 1rem 0.4rem;
+}
+
+#btn {
+	text-align: right;
+}
+
+button #clear {
+	background-color: rgb(255, 0, 0);
+}
+
+button {
+	background-color: rgb(138, 104, 169);
+	cursor: pointer;
+	padding: 0.5rem 0.9rem;
+	background-color: rgb(240, 242, 255);
+	color: rgb(138, 104, 169);
+	border: 0.1rem solid rgb(138, 104, 169);
+	border-radius: 0.5rem;
+}
+
+button:hover {
+	background-color: rgb(138, 104, 169);
+	color: rgb(236, 236, 236);
+	transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
