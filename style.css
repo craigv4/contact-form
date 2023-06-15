@@ -24,6 +24,7 @@ form {
 	margin: 0 auto;
 	border-radius: 0.5rem;
 	padding: 1.6rem;
+	color: rgb(36, 36, 36);
 }
 
 .heading {
@@ -48,7 +49,6 @@ textarea {
 	margin: 0.2rem 0;
 	border: 1px solid #bbb;
 	padding-left: 1ch;
-	border-radius: 0.2rem;
 }
 
 #feedback textarea {
@@ -95,8 +95,21 @@ button #clear {
 	background-color: rgb(255, 0, 0);
 }
 
+#submit{
+background-color: rgb(138, 104, 169);
+color: rgb(236, 236, 236);
+}
+
+#submit:hover {
+	color: rgb(255, 255, 255);
+
+	background-color: rgb(94, 71, 116);
+	transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+
 button {
-	background-color: rgb(138, 104, 169);
+/* 	background-color: rgb(138, 104, 169); */
 	cursor: pointer;
 	padding: 0.5rem 0.9rem;
 	background-color: rgb(240, 242, 255);

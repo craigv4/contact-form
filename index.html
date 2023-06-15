@@ -25,12 +25,12 @@
 						<input type="email" name="user-email" id="user-email" placeholder="emailaddress@xyz.com" required />
 
 						<label for="phone-number">Your Phone Number</label>
-						<input type="tel" name="phone-number" id="phone-number" tel placeholder="+910000000000" required />
+						<input type="tel" name="phone-number" id="phone-number" tel placeholder="+910000000000" required minlength="10"/>
 					</section>
 
 					<section id="feedback">
 						<label for="feedback-message">Your Feedback Message</label>
-						<textarea name="feedback-message" id="feedback-message" rows="6" placeholder="Please explain in few words how can we help you"></textarea>
+						<textarea name="feedback-message" id="feedback-message" rows="6" placeholder="Please explain in few words how can we help you" minlength="25" maxlength="200"></textarea>
 
 						<label for="find-us">How did you find us ?</label>
 						<select name="find-us-via" id="find-us">
@@ -43,15 +43,15 @@
 					<section id="reply-with">
 						<div class="reply-method">
 							<input type="radio" name="reply-method" id="call" />
-							<label for="call">Call me</label>
+							<label for="call" value="call">Call me</label>
 						</div>
 						<div class="reply-method">
 							<input type="radio" name="reply-method" id="email" />
-							<label for="email">Send an email</label>
+							<label for="email" value="email">Send an email</label>
 						</div>
 						<div class="reply-method">
 							<input type="radio" name="reply-method" id="none" />
-							<label for="none">Dont reply</label>
+							<label for="none" value="none">Dont reply</label>
 						</div>
 					</section>
 				</section>
@@ -62,7 +62,7 @@
 				</section>
 				<section id="btn">
 					<button id="clear" type="reset">Clear</button>
-					<button id="submit" type="submit">Submit</button>
+					<button id="submit" type="submit" id="submit">Submit</button>
 				</section>
 			</form>
 		</section>
